@@ -1,14 +1,9 @@
----
-name: HTML Starter
-slug: html-starter-with-analytics
-description: HTML5 template with analytics and advanced routing configuration.
-deployUrl: https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/html&project-name=html
-relatedTemplates:
-  - nextjs-boilerplate
----
+## AirGCS  
 
-# HTML Starter
+AirGCS致力于打造新一代智能无人机地面站系统，用AI技术重新定义无人机作业效率,引领AI驱动的智能无人机地面站革新.
 
-This is a starter HTML5 templates which is configured with Vercel Analytics (through a `script` tag), advanced routing with [Vercel Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware), as well as some basic styles
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/html&project-name=html)
+详情请访问官网。
+
+
+我们正在寻求合作开发与资金投入。有意愿欢迎与官网联系方式联系。

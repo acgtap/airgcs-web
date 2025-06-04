@@ -134,11 +134,31 @@
             overflow: hidden;
         }
 
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 35, 126, 0.6);
+            z-index: 2;
+        }
+
         .hero-content {
             max-width: 1400px;
             margin: 0 auto;
             position: relative;
-            z-index: 2;
+            z-index: 3;
             color: var(--text-light);
             text-align: center;
         }
@@ -148,6 +168,7 @@
             margin-bottom: 1.5rem;
             line-height: 1.2;
             background: linear-gradient(135deg, #ffffff, #e3f2fd);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -389,6 +410,14 @@
 
         /* 响应式设计 */
         @media (max-width: 768px) {
+            .hero-video {
+                display: none;
+            }
+
+            .hero-video-overlay {
+                display: none;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -469,6 +498,10 @@
     </header>
 
     <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://cdn.prod.website-files.com/6390a76823b53041d59216cd/65322be7cf330ff484a13359_SPH-Sensors-20230920(HD)-sm-transcode.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
         <div class="hero-content">
             <h1>引领AI驱动的智能无人机地面站革新</h1>
             <p>整合前沿AI技术与无人机控制系统，为农业、电力、应急等行业提供智能化、自动化的无人机任务管理解决方案</p>
@@ -562,30 +595,22 @@
         <h2 class="section-title">行业应用案例</h2>
         <div class="case-grid">
             <div class="case-card">
-                <svg class="case-icon" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                </svg>
+                <img src="https://tc.vlogidc.cn/img/2025/06/04/683fafc280c88.png" alt="科研测试" style="height: 120px; margin-bottom: 1.5rem;">
                 <h3>科研测试</h3>
                 <p>自助多项AI功能简化，简化多种实验场景模拟，数据采集精度达99.9%，服务高校科研项目.</p>
             </div>
             <div class="case-card">
-                <svg class="case-icon" viewBox="0 0 24 24">
-                    <path d="M15 4v2h3v12h-3v2h5V4zM4 20h5v-2H6V6h3V4H4z"/>
-                </svg>
+                <img src="https://tc.vlogidc.cn/img/2025/06/04/683faf31a5b34.png" alt="智慧农业" style="height: 120px; margin-bottom: 1.5rem;">
                 <h3>智慧农业</h3>
                 <p>覆盖5000亩农田精准监测，病虫害识别准确率97%，农药使用量减少30%，年化收益提升18%</p>
             </div>
             <div class="case-card">
-                <svg class="case-icon" viewBox="0 0 24 24">
-                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                </svg>
+              <img src="https://cdn.prod.website-files.com/6390a76823b53041d59216cd/642d8e6997d9634802661a08_sph-engineering-drone-based-low-frequency-gpr-for-mining-p-500.png" alt="电力巡检" style="height: 120px; margin-bottom: 1.5rem;">
                 <h3>电力巡检</h3>
                 <p>3小时完成100基杆塔巡检，设备缺陷识别率99.2%，年均节省人工成本200万+</p>
             </div>
             <div class="case-card">
-                <svg class="case-icon" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                </svg>
+                <img src="https://tc.vlogidc.cn/img/2025/06/04/683faff3130d4.png" alt="应急救援" style="height: 120px; margin-bottom: 1.5rem;">
                 <h3>应急救援</h3>
                 <p>30秒内生成最优救援路径，支持夜间/恶劣天气作业，任务完成率提升60%</p>
             </div>
